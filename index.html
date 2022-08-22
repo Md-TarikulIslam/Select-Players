@@ -4,151 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Best Five Players</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-black">
+<body >
     <!-- Header Section start -->
     <header class="text-center p-5 bg-black">
-    <h1 class="text-warning mt-5 mb-3 ">Select Players</h1>
+    <h1 class="text-warning mt-5 mb-3 ">Best Five Players</h1>
     <p class="text-white mb-5">A football player or footballer is a sportsperson who plays one of the different types of football. <br> The main types of football are association football, American football, Canadian football, <br> Australian rules football, Gaelic football, rugby league and rugby union.</p>
 </header>
 <!-- Header Section end -->
 
 <!-- Main Section start -->
-<main>
+<main class="bg-dark">
     <!-- Players section start -->
     <!-- First 3 Players -->
-    <section class="m-5">
+    <section class="p-5">
         <div class="d-flex flex-row mb-3 ms-5 ">
         
-        <div class="card me-5 " style="width: 18rem;">
+        <div class="card me-5 bg-black" style="width: 18rem;">
             <img src="images/1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title text-center">Lionel Messi</h5>
+              <h5 class="card-title text-center text-white">Lionel Messi</h5>
               <div class="d-grid gap-2 col-12 mx-auto">
-                <button class="btn btn-primary" type="button" onclick="playerList(this)">Button</button>
+                <button  class="btn btn-primary" type="button" onclick="playerList(this)">Select</button>
               </div>
             </div>
           </div>
+
         <div class="card me-5" style="width: 18rem;">
             <img src="images/2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Neymar Jr.</h5>
+            <div class="card-body bg-black">
+              <h5 class="card-title text-center text-white">Neymar Jr.</h5>
               <div class="d-grid gap-2 col-12 mx-auto">
-                <button class="btn btn-primary" type="button" onclick="playerList(this)">Button</button>
+                <button class="btn btn-primary" type="button" onclick="playerList(this)">Select</button>
               </div>
             </div>
           </div>
+
           <div class="card me-5" style="width: 18rem;">
             <img src="images/3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5  class="card-title text-center">Kylian Mbappé</h5>
+            <div class="card-body bg-black">
+              <h5  class="card-title text-center text-white">Kylian Mbappé</h5>
               <div class="d-grid gap-2 col-12 mx-auto">
-                <button class="btn btn-primary" type="button" onclick="playerList(this)">Button</button>
+                <button class="btn btn-primary" type="button" onclick="playerList(this)">Select</button>
               </div>
             </div>
           </div>
+
           <div class="card " style="width: 18rem;">
             <h1 class="text-center my-5">Selected - V</h1>
             <div class="card-body">
-                <table class="table table-borderless">
-                    <tbody id="ordered-list">
-                      <tr>
-                    
-                      </tr>
+              <ol id="ordered-list">
+                <li>
 
-                    </tbody>
-                </table>
-            
-              
+                </li>
+              </ol> 
             </div>
           </div>
         </div>
-
     </section>
-
+ <!-- End of first 3 players -->
     <!-- Second section of players -->
-    <section class="m-5">
-        <div class="d-flex flex-row mb-3 ms-5 ">
+    <section class="mx-5 my-0">
+        <div class="d-flex flex-row ms-5 ">
         
-        <div class="card me-5 " style="width: 18rem;">
+        <div class="card me-5 " style="width: 18rem; height:200px">
             <img src="images/4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5  class="card-title text-center">Ángel Di María</h5>
+            <div class="card-body bg-black rounded">
+              <h5  class="card-title text-center text-white">Ángel Di María</h5>
               <div class="d-grid gap-2 col-12 mx-auto">
-                <button class="btn btn-primary" type="button" onclick="playerList(this)">Button</button>
+                <button id="btnbtn" class="btn btn-primary" type="button" onclick="playerList(this)">Select</button>
               </div>
             </div>
           </div>
-        <div class="card me-5" style="width: 18rem;">
+
+        <div class="card me-5" style="width: 18rem ; height:200px">
             <img src="images/5.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5  class="card-title text-center">Cristiano Ronaldo</h5>
+            <div class="card-body bg-black rounded">
+              <h5  class="card-title text-center text-white">Cristiano Ronaldo</h5>
               <div class="d-grid gap-2 col-12 mx-auto">
-                <button  class="btn btn-primary" type="button" onclick="playerList(this)">Button</button>
+                <button  class="btn btn-primary" type="button" onclick="playerList(this)">Select</button>
               </div>
             </div>
           </div>
-          <div class="card me-5" style="width: 18rem;">
+
+          <div class="card me-5" style="width: 18rem; height:200px">
             <img src="images/6.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Nicolas Tagliafico</h5>
+            <div class="card-body bg-black rounded">
+              <h5 class="card-title text-center text-white">Nicolas Tagliafico</h5>
               <div class="d-grid gap-2 col-12 mx-auto">
-                <button class="btn btn-primary" type="button" onclick="playerList(this)">Button</button>
+                <button class="btn btn-primary" type="button" onclick="playerList(this)">Select</button>
               </div>
             </div>
           </div>
-          <div class="card " style="width: 18rem;">
-            <h1 class="text-center my-5">Budget</h1>
+
+          <div class="card mb-5 bg-black" style="width: 18rem;">
+            <h1 class="text-center my-5 text-white">Budget</h1>
             <div class="card-body">
                 <div class="d-flex flex-row justify-content-between">
-            <h5>Per Player</h5>
+            <h5 class="text-white">Per Player</h5>
             <input  id="budget-perplayer" style="width:120px" type="text">
             
         </div>
         <div class="d-grid col-12 mx-auto my-4">
             <button id="btn-perplayer-calculate" class="btn btn-primary" type="button">Calculate</button>
           </div>
+
           <div class="d-flex flex-row justify-content-between mb-3">
-          <h5>Player Expenses</h5>
-          <h5>$<span id="player-expenses">0000</span></h5>
+          <h5 class="text-white">Player Expenses</h5>
+          <h5 class="text-white">$<span id="player-expenses">00</span></h5>
           </div>
 
           <div class="d-flex flex-row justify-content-between mb-3">
-          <h5>Manager</h5>
+          <h5 class="text-white">Manager</h5>
           <input id="manager-field" style="width:120px" type="text">
           </div>
+
           <div class="d-flex flex-row justify-content-between">
-          <h5>Coach</h5>
+          <h5 class="text-white">Coach</h5>
           <input id="coach-field" style="width:120px" type="text">
           </div>
+
           <div class="d-grid col-12 mx-auto my-4">
             <button id="btn-total-budget" class="btn btn-primary" type="button">Calculate</button>
           </div>
+
           <div class="d-flex flex-row justify-content-between">
-            <h5>Total</h5>
-            <h5>$<span id="total" class="text-danger">0000</span></h5>
+            <h5 class="text-white">Total</h5>
+            <h5 class="text-white">$<span id="total" class="text-danger">00</span></h5>
             </div>
 
-              
             </div>
           </div>
         </div>
-
+        <span id="total-player"></span>
     </section>
-    <span id="total-player"></span>
-
-
-    
-        <!-- Players section start -->
+<!-- Last 3 Players section end -->
 </main>
 <!-- Main Section end-->
-
+<!-- Footer Section start-->
+<footer>
+  <h4 class="bg-black text-center text-white p-5 mb-0 mt-0">All rights reserved</h4>
+</footer>
+<!-- Footer Section end-->
+<!-- Script file load-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/select.js"></script>
-  
-   
-    
 </body>
 </html>
